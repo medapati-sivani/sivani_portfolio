@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b53c762f93.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm Sivani </h1>
+                <p><span>Full Stack Developer </span></p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sivaniphoto1.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm sivani and I'm a Web Developer with a passion for software development. My skills range from developing Algorithms to implementing them in code. I am open to challenges and always looking to expand my knowledge. I enjoy working on challenging problems, solving them, and then delivering the result to my customers.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li>CSS</li>
+                            <li><span>JavaScript</span></li>
+                            <li>Angular</li>
+                            <li><span>Java</span></li>
+                            <li>SpringBoot</li>
+                            <li><span>SQL</span></li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span></li>
+                            <li>Bachelor of Technology (CSE)</li>
+                            <li><span>2016-2018</span></li>
+                            <li>Intermediate (MPC)</li>
+                            <li><span>2015-2016</span></li>
+                            <li>SSC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------services--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Design</h2>
+                    <p>Build the responsive websites with front-end technologies and back-end technologies such as HTML, CSS, Java Script, Angular, SQL, Spring Boot, and Firebase</p>
+                    <!------------<a href="#">Learn more</a>---------------->
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Competitive Coding</h2>
+                    <p>Competitive coding on platforms like Hackerrank, CodeChef, and others. Experience in working with different languages like C, Java, Python and solving problems using various approaches</p>
+                    <!----------<a href="#">Learn more</a>------------------>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/online-banking.jpg">
+                    <div class="layer">
+                        <h3>Online Banking App</h3>
+                        <p>Online banking app where user can perform all transaction operations and admin can view the transactions and approve transaction</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/fakenews.jfif">
+                    <div class="layer">
+                        <h3>Fake News Detection</h3>
+                        <p>Fake news is causing great trouble nowadays. This project will solve this problem by detecting the fake news using machine learning algorithms such as Random Forest, Decision Tree, SVM, Naive Bayes algorithms. </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/facedetection.jpg">
+                    <div class="layer">
+                        <h3>Face Detection and Recognition</h3>
+                        <p>This project is used to identify the human face from the images. It not only detect the faces from the images and also recognises the faces from the database images using machine learning</p>
+                    </div>
+                </div>
+            </div>
+            <!-----------<a href="#" class="btn">See more</a>---------------->
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    
+                    <p><i class="fa-sharp fa-solid fa-address-card"></i>medapati.sivani@mphasis.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>6303539121</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/medapati-sivani/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sivani-medapati-8b0b4b1b5/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/2529618 Medapati_Sivani resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; medapatisivani</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYFewL--SdCYyBkZKCKB7rSn4tPk_FYBRtjMWaMuAzSXWDyQpetbexF_jYzUv9C2bR/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
